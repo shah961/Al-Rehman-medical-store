@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog — Al Rahman Medical Store</title>
+  <meta name="description" content="Browse authentic medicines, healthcare devices, supplements, and baby care essentials at Al Rahman Medical Store in Piplan.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-staff-snake"></i>
+        <span>Al Rahman <small style="font-size:0.6em; display:block; color:var(--primary-accent);">Medical Store</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html">Contact & Emergency</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://wa.me/923059027939" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Quick Order</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Catalog Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center" style="max-width:700px; margin:0 auto 2.5rem;">
+        <span class="badge-tag">Verified Inventory</span>
+        <h1 style="font-size: 2.5rem; margin-top: 0.5rem;">Healthcare Catalog</h1>
+        <p class="text-muted">Explore genuine pharmaceutical supplies, diagnostic tools, and daily health essentials.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="medicines">Medicines</button>
+        <button class="filter-btn" data-filter="devices">Health Devices</button>
+        <button class="filter-btn" data-filter="baby">Baby & Mother Care</button>
+        <button class="filter-btn" data-filter="firstaid">First Aid</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card" data-category="medicines">
+          <div class="product-img-wrapper">
+            <span class="product-badge">100% Original</span>
+            <i class="fa-solid fa-pills"></i>
+          </div>
+          <div class="product-info">
+            <span style="font-size:0.75rem; color:var(--primary-accent); font-weight:700;">PRESCRIPTION REQUIRED</span>
+            <h3 class="product-title">Panadol Extra 500mg (Paracetamol)</h3>
+            <p class="text-muted" style="font-size:0.85rem; margin-bottom:1rem;">Effective relief for tough headaches, body aches, and fever.</p>
+            <div class="product-price">PKR 250</div>
+            <a href="https://wa.me/923059027939?text=Hello%20Al%20Rahman%20Medical%20Store,%20I%20want%20to%20order%20Panadol%20Extra%20500mg." target="_blank" class="btn btn-primary" style="width:100%;"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="devices">
+          <div class="product-img-wrapper">
+            <span class="product-badge">Certified</span>
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <div class="product-info">
+            <span style="font-size:0.75rem; color:var(--text-light); font-weight:700;">DIAGNOSTIC DEVICE</span>
+            <h3 class="product-title">Digital Blood Pressure Monitor</h3>
+            <p class="text-muted" style="font-size:0.85rem; margin-bottom:1rem;">High-accuracy automatic digital upper-arm BP monitor.</p>
+            <div class="product-price">PKR 4,500</div>
+            <a href="https://wa.me/923059027939?text=Hello%20Al%20Rahman%20Medical%20Store,%20I%20want%20to%20order%20the%20Digital%20Blood%20Pressure%20Monitor." target="_blank" class="btn btn-primary" style="width:100%;"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="baby">
+          <div class="product-img-wrapper">
+            <span class="product-badge">Gentle Formula</span>
+            <i class="fa-solid fa-baby"></i>
+          </div>
+          <div class="product-info">
+            <span style="font-size:0.75rem; color:var(--text-light); font-weight:700;">BABY CARE</span>
+            <h3 class="product-title">Infant Formula Milk Powder</h3>
+            <p class="text-muted" style="font-size:0.85rem; margin-bottom:1rem;">Complete nutrition for essential early-stage infant growth.</p>
+            <div class="product-price">PKR 2,100</div>
+            <a href="https://wa.me/923059027939?text=Hello%20Al%20Rahman%20Medical%20Store,%20I%20want%20to%20order%20Infant%20Formula%20Milk." target="_blank" class="btn btn-primary" style="width:100%;"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="firstaid">
+          <div class="product-img-wrapper">
+            <span class="product-badge">Emergency Essential</span>
+            <i class="fa-solid fa-kit-medical"></i>
+          </div>
+          <div class="product-info">
+            <span style="font-size:0.75rem; color:var(--text-light); font-weight:700;">FIRST AID KIT</span>
+            <h3 class="product-title">Complete Home First Aid Kit</h3>
+            <p class="text-muted" style="font-size:0.85rem; margin-bottom:1rem;">Includes antiseptic liquids, bandages, gauze rolls, and medical tape.</p>
+            <div class="product-price">PKR 1,200</div>
+            <a href="https://wa.me/923059027939?text=Hello%20Al%20Rahman%20Medical%20Store,%20I%20want%20to%20order%20the%20Complete%20Home%20First%20Aid%20Kit." target="_blank" class="btn btn-primary" style="width:100%;"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Al Rahman Medical Store. Rodi Road, Hafzwala, Piplan, Punjab. Phone/WhatsApp: +92 305 9027939</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
