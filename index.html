@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al Rahman Medical Store — Genuine Medicines & Healthcare Essentials in Piplan</title>
+  <meta name="description" content="Al Rahman Medical Store in Piplan offers 100% genuine medicines, healthcare devices, baby care products, and 24/7 emergency services with doorstep delivery.">
+  <meta name="keywords" content="Al Rahman Medical Store, Pharmacy Piplan, Genuine Medicines Punjab, Online Pharmacy Pakistan, Prescription Upload WhatsApp">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Al Rahman Medical Store — Genuine Medicines & Healthcare Essentials">
+  <meta property="og:description" content="Fast doorstep delivery and instant WhatsApp prescription upload in Piplan, Punjab. 100% Verified Medicines.">
+  <meta property="og:url" content="https://alrahmanmedicalstore.pk/">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Pharmacy",
+    "name": "Al Rahman Medical Store",
+    "image": "https://alrahmanmedicalstore.pk/logo.png",
+    "telephone": "+923059027939",
+    "email": "alrahmanmedicalstore5@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rodi Road, Hafzwala",
+      "addressLocality": "Piplan",
+      "addressRegion": "Punjab",
+      "addressCountry": "PK"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "09:00",
+        "closes": "22:00"
+      }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Live Emergency Status Top Bar -->
+  <div class="top-emergency-bar">
+    <div class="container">
+      <div class="status-indicator">
+        <span class="pulse-dot"></span>
+        <span>OPEN NOW &bull; Mon-Sat: 8AM-11PM | Emergency: 24/7 On-Call</span>
+      </div>
+      <div>
+        <a href="tel:+923059027939" style="color:var(--accent-glow); font-weight:700;"><i class="fa-solid fa-phone-flip"></i> Emergency: +92 305 9027939</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-staff-snake"></i>
+        <span>Al Rahman <small style="font-size:0.6em; display:block; color:var(--primary-accent);">Medical Store</small></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact & Emergency</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/923059027939?text=Hello%20Al%20Rahman%20Medical%20Store,%20I%20would%20like%20to%20order%20medicines." target="_blank" class="btn btn-primary">
+          <i class="fa-brands fa-whatsapp"></i> Quick Order
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive WebGL Hero Section -->
+  <section class="hero-wrapper">
+    <canvas id="three-canvas"></canvas>
+    
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="badge-tag"><i class="fa-solid fa-shield-halved"></i> 100% Genuine Certified Medicines</span>
+        <h1>Your Health Is Our <span>Ultimate Priority</span></h1>
+        <p>Providing authentic pharmaceutical supplies, medical devices, and rapid doorstep delivery in Piplan, Punjab. Upload your prescription for instant fulfillment.</p>
+        
+        <div class="hero-cta-group" style="display:flex; gap:1rem;">
+          <a href="#upload-prescription" class="btn btn-primary"><i class="fa-solid fa-file-medical"></i> Upload Prescription</a>
+          <a href="products.html" class="btn btn-secondary"><i class="fa-solid fa-boxes-stacked"></i> Browse Catalog</a>
+        </div>
+      </div>
+
+      <!-- Quick WhatsApp Prescription Upload Widget -->
+      <div class="upload-card-hero" id="upload-prescription">
+        <h3 style="color:var(--white); margin-bottom:0.5rem;"><i class="fa-solid fa-prescription" style="color:var(--primary-accent);"></i> Fast Prescription Order</h3>
+        <p style="color:var(--text-light); font-size:0.875rem; margin-bottom:1.25rem;">Snap a photo of your prescription and submit directly to our pharmacists on WhatsApp.</p>
+
+        <form id="hero-prescription-form">
+          <div class="dropzone-box" onclick="document.getElementById('prescription-file').click()">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <p style="font-weight:600; color:var(--white);">Click to Attach Prescription</p>
+            <span style="font-size:0.75rem; color:var(--text-light);">Supports JPG, PNG, PDF (Max 10MB)</span>
+            <input type="file" id="prescription-file" style="display:none;" accept="image/*,.pdf">
+          </div>
+          
+          <div style="margin-top: 1rem;">
+            <input type="text" id="patient-name" placeholder="Your Full Name" style="width:100%; padding:0.75rem 1rem; border-radius:var(--radius-sm); background:rgba(255,255,255,0.08); color:#fff; border:1px solid rgba(255,255,255,0.2); margin-bottom:0.75rem;" required>
+            <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fa-brands fa-whatsapp"></i> Submit via WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Metrics Bar -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <h3>200+</h3>
+        <p>Authentic Medicines</p>
+      </div>
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>Verified Quality Guarantee</p>
+      </div>
+      <div class="stat-item">
+        <h3>24/7</h3>
+        <p>Emergency On-Call Support</p>
+      </div>
+      <div class="stat-item">
+        <h3>Fast</h3>
+        <p>Local Doorstep Delivery</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features / Why Choose Us -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center" style="max-width: 650px; margin: 0 auto 3rem;">
+        <span class="badge-tag">Clinical Excellence</span>
+        <h2 style="font-size: 2.25rem; margin-top: 0.5rem;">Why Trust Al Rahman Medical Store?</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+          <h3>Climate-Controlled Storage</h3>
+          <p class="text-muted">Temperature-sensitive vaccines and medications stored under optimal conditions to guarantee maximum efficacy.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-user-doctor"></i></div>
+          <h3>Qualified Pharmacists</h3>
+          <p class="text-muted">Expert consultation and guidance on dosage, drug interactions, and proper medicine usage.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3>Express Doorstep Delivery</h3>
+          <p class="text-muted">Get your essential medicines delivered directly to your doorstep anywhere in Piplan and surrounding areas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom:1rem;">
+            <i class="fa-solid fa-staff-snake"></i> Al Rahman
+          </a>
+          <p style="margin-bottom:1.5rem; font-size:0.9rem;">Your trusted partner for 100% genuine medicines and healthcare essentials in Rodi Road, Hafzwala, Piplan, Punjab.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Product Catalog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Policy</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p style="font-size:0.9rem; margin-bottom:0.5rem;"><i class="fa-solid fa-location-dot text-emerald"></i> Rodi Road, Hafzwala, Piplan, Punjab</p>
+          <p style="font-size:0.9rem; margin-bottom:0.5rem;"><i class="fa-solid fa-phone text-emerald"></i> +92 305 9027939</p>
+          <p style="font-size:0.9rem;"><i class="fa-solid fa-envelope text-emerald"></i> alrahmanmedicalstore5@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="bottom-bar">
+        <p>&copy; 2026 Al Rahman Medical Store. All Rights Reserved.</p>
+        <p>Built for Speed, Trust, and Superior Patient Care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Docked WhatsApp & Emergency Call Buttons -->
+  <div class="docked-cta-wrapper">
+    <a href="tel:+923059027939" class="floating-btn floating-emergency" title="Emergency Call"><i class="fa-solid fa-phone"></i></a>
+    <a href="https://wa.me/923059027939?text=Hello%20Al%20Rahman%20Medical%20Store" class="floating-btn floating-whatsapp" target="_blank" title="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script src="three-hero.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
